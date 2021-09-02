@@ -10,14 +10,12 @@ public class deploy : MonoBehaviour
     
     void Start()
     {
-        screenBounds = Camera.main.ScreenToWorldPoint(new Vector3(Screen.width, Screen.height, Camera.main.transform.position.z));
         StartCoroutine(cactoOnda());
     }
     
     private void SpawnEnemy()
     {
         GameObject cacti = Instantiate(cactusPefrab) as GameObject;
-        cacti.transform.position = new Vector2(screenBounds.x * -2, Random.Range(-screenBounds.y, screenBounds.y));
     }
    
    IEnumerator cactoOnda()
