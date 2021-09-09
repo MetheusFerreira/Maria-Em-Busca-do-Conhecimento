@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 051a48a21b4fbb9469e62c0dc1fe8880
+guid: c5b45de1a49b71f4c86a0f7744b0e93e
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 605162050437240712
-    second: sun_0
+      213: -6557350512500495638
+    second: telaa_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sun_0
+      name: telaa_0
       rect:
         serializedVersion: 2
-        x: 134
-        y: 0
-        width: 376
-        height: 387
+        x: 133
+        y: 38
+        width: 385
+        height: 304
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887dbd7bda7f56800800000000000000
-      internalID: 605162050437240712
+      spriteID: aeaaea2837c9ff4a0800000000000000
+      internalID: -6557350512500495638
       vertices: []
       indices: 
       edges: []

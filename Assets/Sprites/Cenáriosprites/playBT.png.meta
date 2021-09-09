@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 051a48a21b4fbb9469e62c0dc1fe8880
+guid: c87f300b1f78a234181c73e83da4ac37
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 605162050437240712
-    second: sun_0
+      213: -1017620758694728519
+    second: playBT_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -118,13 +118,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: sun_0
+      name: playBT_0
       rect:
         serializedVersion: 2
-        x: 134
-        y: 0
-        width: 376
-        height: 387
+        x: 216
+        y: 130
+        width: 253
+        height: 167
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 887dbd7bda7f56800800000000000000
-      internalID: 605162050437240712
+      spriteID: 9bcefe1cf4fa0e1f0800000000000000
+      internalID: -1017620758694728519
       vertices: []
       indices: 
       edges: []
