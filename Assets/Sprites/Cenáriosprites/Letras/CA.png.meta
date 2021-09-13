@@ -1,16 +1,10 @@
 fileFormatVersion: 2
-guid: 2c52b3de8ca8e65499f341aaf448f838
+guid: db58af40d0dbf8d4299bdb10038c2d4c
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8760859353017667696
-    second: "placa_bot\xE3o_0"
-  - first:
-      213: 1886848710580753070
-    second: "placa_bot\xE3o_1"
-  - first:
-      213: 5662015497633554390
-    second: "placa_bot\xE3o_2"
+      213: 1412773821110339951
+    second: CA_0
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,68 +90,50 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: "placa_bot\xE3o_0"
+      name: CA_0
       rect:
         serializedVersion: 2
-        x: 125
-        y: 142
-        width: 81
-        height: 53
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 09f2930e5dc2b6680800000000000000
-      internalID: -8760859353017667696
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "placa_bot\xE3o_1"
-      rect:
-        serializedVersion: 2
-        x: 132
-        y: 87
-        width: 80
-        height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: ea2d113c7ee6f2a10800000000000000
-      internalID: 1886848710580753070
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: "placa_bot\xE3o_2"
-      rect:
-        serializedVersion: 2
-        x: 136
+        x: 1
         y: 14
-        width: 85
-        height: 73
+        width: 41
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 6df5431b815839e40800000000000000
-      internalID: 5662015497633554390
+      spriteID: f69c04b1e4e2b9310800000000000000
+      internalID: 1412773821110339951
       vertices: []
       indices: 
       edges: []
