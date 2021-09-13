@@ -60,4 +60,13 @@ public class Maria : MonoBehaviour
             rb.AddForce(new Vector2(0f, jumpPower));
         }
     }
+    void OnTriggerEnter2D(Collider2D oi)
+    {
+        if(oi.CompareTag("Letra"))
+        {
+            Sprite var = oi.gameObject.GetComponent<Palavra>().Opa.sprite;
+            GameObject.Find("SpawnLetra").GetComponent<LetraBehaviour>().Sprites.Remove(var);
+            Destroy(oi.gameObject);
+        }
+    }
 }
