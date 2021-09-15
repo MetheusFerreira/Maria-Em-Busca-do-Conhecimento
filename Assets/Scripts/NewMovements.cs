@@ -25,6 +25,5 @@ public class NewMovements : MonoBehaviour
             Time.timeScale = 0f;
             gamePausado = true;
         }
-        Debug.Log("sussy baka");
     }
 }

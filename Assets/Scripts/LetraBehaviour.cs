@@ -20,13 +20,14 @@ public class LetraBehaviour : MonoBehaviour
 
     IEnumerator spawn()
     {
-        while(true)
+        while(Sprites.Count >0)
         {
             yield return new WaitForSeconds(Random.Range(mint,maxt));
             int i = Random.Range(0,Sprites.Count);
             GameObject var =  Instantiate(palavra);
-            var.GetComponent<Palavra>().Opa.sprite = Sprites[i];
+            var.GetComponent<Palavra>().ChangeSprite(Sprites[i]);
             var.GetComponent<Palavra>().Nome = Sprites[i].ToString();
         }
     }
+
 }

@@ -11,11 +11,13 @@ public class Maria : MonoBehaviour
     [SerializeField] LayerMask groundLayer;
     [SerializeField] float jumpPower = 500;
     [SerializeField] bool rastejow = false;
+    [SerializeField] public GameObject gameGanheiUI;
     private const float detectionRadius = 0.2F;
     const float groundCheckRadius = 0.2f;
     public LayerMask detectionLayer;
     float horizontalValor;
     bool jump;
+    public static bool gamePausado;
     #endregion
 
     void Awake()
@@ -65,8 +67,16 @@ public class Maria : MonoBehaviour
         if(oi.CompareTag("Letra"))
         {
             Sprite var = oi.gameObject.GetComponent<Palavra>().Opa.sprite;
-            GameObject.Find("SpawnLetra").GetComponent<LetraBehaviour>().Sprites.Remove(var);
+            var letraSpawn = GameObject.Find("spawnLetra").GetComponent<LetraBehaviour>();
+            letraSpawn.Sprites.Remove(var);
             Destroy(oi.gameObject);
+            if(letraSpawn.Sprites.Count == 0)
+            {
+                this.enabled = false;
+                gameGanheiUI.SetActive(true);
+                Time.timeScale = 0f;
+                gamePausado = true;
+            }
         }
     }
 }

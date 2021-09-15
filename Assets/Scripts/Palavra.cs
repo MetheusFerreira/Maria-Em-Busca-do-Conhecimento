@@ -4,18 +4,24 @@ using UnityEngine;
 
 public class Palavra : MonoBehaviour
 {
+    
     [SerializeField]
     string nome;
     SpriteRenderer opa;
     public string Nome{get;set;}
     public SpriteRenderer Opa{get;set;}
     
-    void start()
+    void Start()
     {
         Opa = GetComponent<SpriteRenderer>();
+        Destroy(this.gameObject, 10f);
     }
     void Update()
     {
-        transform.position -= new Vector3(0.1f,0f,0f);
+        transform.position -= new Vector3(0.4f,0f,0f);
+    }
+    public void ChangeSprite(Sprite uepa)
+    {
+        GetComponent<SpriteRenderer>().sprite = uepa;
     }
 }
