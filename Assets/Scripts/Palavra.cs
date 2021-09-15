@@ -14,11 +14,11 @@ public class Palavra : MonoBehaviour
     void Start()
     {
         Opa = GetComponent<SpriteRenderer>();
-        Destroy(this.gameObject, 10f);
+        Destroy(this.gameObject, 5f);
     }
     void Update()
     {
-        transform.position -= new Vector3(0.4f,0f,0f);
+        transform.position -= new Vector3(0.04f,0f,0f);
     }
     public void ChangeSprite(Sprite uepa)
     {
