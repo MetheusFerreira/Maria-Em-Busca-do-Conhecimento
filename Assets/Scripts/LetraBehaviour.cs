@@ -11,6 +11,8 @@ public class LetraBehaviour : MonoBehaviour
     [SerializeField]
     List<Sprite> sprites;
 
+    public AudioClip[] fonem;
+
     public List<Sprite> Sprites { get => sprites; set => sprites = value; }
 
     void Start()
@@ -28,5 +30,14 @@ public class LetraBehaviour : MonoBehaviour
             var.GetComponent<Palavra>().ChangeSprite(Sprites[i]);
             var.GetComponent<Palavra>().Nome = Sprites[i].ToString();
         }
+
+        // while(Fonemas.Count >0)
+        // {
+        //     sfx.Play();
+        //     AudioSource sfx = GetComponent<AudioSource>();
+        //     yield return new WaitForSeconds(sfx.clip.lenght);
+        //     sfx.clip = 
+        //     sfx.Play();
+        // }
     }
 }

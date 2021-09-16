@@ -18,6 +18,8 @@ public class Maria : MonoBehaviour
     float horizontalValor;
     bool jump;
     public static bool gamePausado;
+    //List<AudioClip> fonemas = new List<AudioClip>{sfx_0,sfx_1};
+    // public List<AudioSource> Fonemas{ get => fonemas; set => fonemas = value; }
     #endregion
 
     void Awake()
@@ -68,9 +70,10 @@ public class Maria : MonoBehaviour
         {
             Sprite var = oi.gameObject.GetComponent<Palavra>().Opa.sprite;
             var letraSpawn = GameObject.Find("spawnLetra").GetComponent<LetraBehaviour>();
-            letraSpawn.Sprites.Remove(var);
             Destroy(oi.gameObject);
             SFXManager.sfx.audio.PlayOneShot(SFXManager.sfx.click);
+            letraSpawn.Sprites.Remove(var);
+
             if(letraSpawn.Sprites.Count == 0)
             {
                 this.enabled = false;

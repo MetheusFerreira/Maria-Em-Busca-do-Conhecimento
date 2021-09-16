@@ -9,6 +9,7 @@ public class SFXManager : MonoBehaviour
     public AudioClip click;
     
     public static SFXManager sfx;
+
     void Awake()
     {
         if(sfx == null)
