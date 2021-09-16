@@ -16,9 +16,9 @@ public class Palavra : MonoBehaviour
         Opa = GetComponent<SpriteRenderer>();
         Destroy(this.gameObject, 5f);
     }
-    void Update()
+    void FixedUpdate()
     {
-        transform.position -= new Vector3(0.04f,0f,0f);
+        transform.position -= new Vector3(0.6f,0f,0f);
     }
     public void ChangeSprite(Sprite uepa)
     {

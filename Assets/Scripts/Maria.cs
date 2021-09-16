@@ -70,6 +70,7 @@ public class Maria : MonoBehaviour
             var letraSpawn = GameObject.Find("spawnLetra").GetComponent<LetraBehaviour>();
             letraSpawn.Sprites.Remove(var);
             Destroy(oi.gameObject);
+            SFXManager.sfx.audio.PlayOneShot(SFXManager.sfx.click);
             if(letraSpawn.Sprites.Count == 0)
             {
                 this.enabled = false;

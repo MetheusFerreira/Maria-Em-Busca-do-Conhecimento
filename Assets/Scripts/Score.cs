@@ -15,7 +15,7 @@ public class Score : MonoBehaviour
         pointIncrease = 30f;
     }
 
-    void Update()
+    void FixedUpdate()
     {
         scoreText.text = (int)score+"";
         score += pointIncrease*Time.deltaTime;

@@ -29,5 +29,4 @@ public class LetraBehaviour : MonoBehaviour
             var.GetComponent<Palavra>().Nome = Sprites[i].ToString();
         }
     }
-
 }
