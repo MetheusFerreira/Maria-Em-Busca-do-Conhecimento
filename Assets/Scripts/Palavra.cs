@@ -14,7 +14,7 @@ public class Palavra : MonoBehaviour
     void Start()
     {
         Opa = GetComponent<SpriteRenderer>();
-        Destroy(this.gameObject, 5f);
+        Destroy(this.gameObject, 10f);
     }
     void FixedUpdate()
     {

@@ -12,7 +12,7 @@ public class Score : MonoBehaviour
     void Start()
     {
         score = 0f;
-        pointIncrease = 30f;
+        pointIncrease = 10f;
     }
 
     void FixedUpdate()

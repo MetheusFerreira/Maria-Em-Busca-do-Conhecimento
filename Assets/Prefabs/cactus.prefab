@@ -13,7 +13,8 @@ GameObject:
   - component: {fileID: 8345941099917109973}
   - component: {fileID: 8345941099917109970}
   - component: {fileID: 7465554176054934014}
-  - component: {fileID: 4793829499841695461}
+  - component: {fileID: 7191877096515879729}
+  - component: {fileID: 4685545070385982338}
   m_Layer: 0
   m_Name: cactus
   m_TagString: cactus
@@ -143,7 +144,20 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
---- !u!114 &4793829499841695461
+--- !u!114 &7191877096515879729
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8345941099917109974}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d3ed7606f8ea64291973bf2c65af7b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  nome: cactus
+--- !u!114 &4685545070385982338
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

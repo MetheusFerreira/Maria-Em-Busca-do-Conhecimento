@@ -12,16 +12,6 @@ public class Pausar : MonoBehaviour
     
     void Start()
     {
-        // if(!PlayerPrefs.HasKey("pausa"))
-        // {
-        //     PlayerPrefs.SetInt("pausa", 0);
-        // }
-
-        // else
-        // {
-        //     Load();
-        // }
-
         UpdateButtonIcon();
     }
 
@@ -55,18 +45,6 @@ public class Pausar : MonoBehaviour
             pausa = false;
             Time.timeScale = 1f;
         }
-
-        //Save();
         UpdateButtonIcon();
     }
-
-    // private void Load()
-    // {
-    //     pausa = PlayerPrefs.GetInt("pausa") == 1;
-    // }
-
-    // private void Save()
-    // {
-    //     PlayerPrefs.SetInt("pausa", pausa ? 1 : 0);
-    // }
 }

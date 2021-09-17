@@ -1,0 +1,35 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+public class NuvemBehaviour : MonoBehaviour
+{
+    public Transform spawnPosition;
+    
+    [SerializeField]
+    GameObject nuvem;
+    [SerializeField]
+    int maxt,mint;
+    [SerializeField]
+    List<Sprite> sprites;
+
+
+    public List<Sprite> Sprites { get => sprites; set => sprites = value; }
+
+    void Start()
+    {
+        StartCoroutine(spawn());
+    }
+
+    IEnumerator spawn()
+    {
+        while(Sprites.Count >0)
+        {
+            yield return new WaitForSeconds(Random.Range(mint,maxt));
+            int i = Random.Range(0,Sprites.Count);
+            GameObject var =  Instantiate(nuvem);
+            var.GetComponent<Nuvens>().ChangeSprite(Sprites[i]);
+            var.GetComponent<Nuvens>().Nome = Sprites[i].ToString();
+        }
+    }
+}
